@@ -1,0 +1,41 @@
+.buttons_container,
+.timer_container {
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: antiquewhite;
+  border: 1px solid #333;
+  box-shadow: 5px 5px 5px 5px#333;
+  font-size: 20px;
+}
+.button_start {
+  background-color: rgba(54, 230, 54, 0.836);
+  color: aliceblue;
+}
+.button_start:hover {
+  background-color: rgba(8, 247, 8, 0.938);
+}
+.button_stop {
+  background-color: rgba(226, 213, 26, 0.836);
+  color: rgb(7, 138, 253);
+}
+.button_stop:hover {
+  background-color: rgb(248, 232, 4);
+}
+.button_reset {
+  background-color: rgba(231, 56, 43, 0.836);
+  color: rgba(248, 232, 4, 0.836);
+}
+.button_reset:hover {
+  background-color: rgb(255, 17, 0);
+}
+button {
+  height: 80px;
+  width: 150px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 50%;
+}
