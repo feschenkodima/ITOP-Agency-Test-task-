@@ -8,6 +8,7 @@ function App() {
   const [timer, setTimer] = useState(0);
   const [isOn, setOn] = useState(false);
   const [status, setStatus] = useState(0);
+  const [count, setCount] = useState(0);
   useEffect(() => {
     const unsubscribe$ = new Subject();
     interval(1)
@@ -28,8 +29,13 @@ function App() {
     setStatus(1);
   };
   const handleWait = () => {
-    setOn((prevState) => !prevState);
-    setStatus(2);
+    setCount(1);
+    setTimeout(() => {
+      setCount(count + 1);
+      if (count == 2) {
+        setOn((prevState) => !prevState);
+      }
+    }, 300);
   };
   const handleStop = () => {
     if (timer !== 0) {

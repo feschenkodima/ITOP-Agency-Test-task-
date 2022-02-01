@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Buttons({ start, stop, reset, status }) {
+function Buttons({ start, stop, reset, status, wait }) {
   return (
     <div className="buttons_container">
       {status === 0 ? (
@@ -17,6 +17,9 @@ function Buttons({ start, stop, reset, status }) {
           </button>
           <button onClick={reset} className="button_reset">
             Reset
+          </button>
+          <button onClick={wait} className="button_wait">
+            Wait
           </button>
         </div>
       ) : (

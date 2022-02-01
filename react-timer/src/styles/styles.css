@@ -14,6 +14,13 @@
   background-color: rgba(54, 230, 54, 0.836);
   color: aliceblue;
 }
+.button_wait {
+  background-color: rgb(168, 87, 243);
+  color: aquamarine;
+}
+.button_wait:hover {
+  background-color: blueviolet;
+}
 .button_start:hover {
   background-color: rgba(8, 247, 8, 0.938);
 }
